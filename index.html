@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="mytyle.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>/
+    <title>bootstrap</title>
+    <body>
+    <div class="parent">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-warning" id="logo">Big</span>blossom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+              <a class="nav-link active" href="#">home</a>
+            </li>
+    <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+    <li class="nav-item">
+              <a class="nav-link" href="#products">products</a>
+            </li>
+    <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+    
+    <li class="nav-item">
+              <a class="nav-link" href="#portfolio">portfolio</a>
+            </li>
+    <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+            <li><a href="" id="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#" id="heart" onclick="toggleHeart()"><i class="fa-regular fa-heart" id="heart-icon"></i></a></li>
+            
+                          </ul>
+              </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.wallpapersafari.com/98/9/Y3f8uF.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Bloom where you are planted</h5>
+            <p class="text" id="text">When admiring other people's gardens, don't forget to tend to your own flowers</p>
+    <a href="#products" class="btn btn-warning mt-4"id="btn">BUY</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpaperset.com/w/full/9/2/c/177518.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Stop and smell the roses</h5>
+            <p class="text" id="text">Don't let the tall weeds cast a shadow on the beautiful flowers in your garden.</p>
+    <a href="#products" class="btn btn-warning mt-4" id="btn">BUY</a>
+    
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpapercave.com/wp/TQ1toZ6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Happiness is fresh flowers </h5>
+            <p class="text" id="text">I hope that while so many people are out smelling the flowers, someone is taking the time to plant some.</p>
+    <a href="#products" class="btn btn-warning mt-4" id="btn">BUY</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section id="about">
+    <div class="container">
+    <div class="row">
+    <h1 class="card-title text-center mt-5">ABOUT</h1>
+    <div class="col-md-6 mt-5">
+    <img src="back1.jpg"height="80%" width="85%"align="left" alt="">
+    </div>
+    <div class="col-md-6 mt-5"id="parent">
+    <h2> We provide best quality<br>services ever</h2>
+    <p><span>flower is the reproductive part of flowering plants. Flowers are also called the bloom or blossom of a plant. Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds</span><span id="dots">...</span><span id="more">In all plants, a flower is usually its most colourful part. We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out.</span></p>
+    <button id="button" onclick="read()">Read More</button>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="products">
+    <div class="container">
+    <h1 class="card-title text-center">PRODUCTS</h1>
+    <div class="row">
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://cdn.globalrose.com/assets/img/prod/anniversary-rose-globalrose.png" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">RED BOUQUET</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">₹600</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://cdn.globalrose.com/assets/img/prod/premium-beautiful-hot-pink-roses-globalrose.png" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">PINK BOUQUET</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">₹700</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://cdn.globalrose.com/assets/img/prod/cheap-valentines-day-roses-globalrose.png" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">YELLOW BOUQUET</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">900</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://cdn.globalrose.com/assets/img/prod/order-roses-for-mothers-day-globalrose.png" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title"id="heading">ORANGE BOUQUET</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">950</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary"id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://i.pinimg.com/736x/61/8a/05/618a0503269fec721cfe611ad5ff1eb2--bouquets.jpg" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">BELL FLOWER</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">₹1200</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://i.pinimg.com/originals/81/df/9f/81df9fe54b026242b3a0f05a3e0433d5.jpg" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">MIXED FLOWER</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">₹1000</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://live.staticflickr.com/6197/6024707163_bb4ae5ccfa_b.jpg" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">MIXED ROSE</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">₹1100</h3>
+          <div id="double"
+          <h6 id="six">Free Delivery</h6> 
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-5">
+    <div class="card" style="width: 15rem;">
+      <img src="https://flowersandmore.co.za/wp-content/uploads/2020/05/Autumn-Joy-R350-S-R500-M-R700-L.jpg" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="heading">GERBERA MIXED</h5>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 id="three">₹1500</h3>
+          <div id="double">
+          <h6 id="six">Free Delivery</h6>
+        <button class="btn btn-primary" id="round"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+     <!-- <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-5">
+        <li class="page-item">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    </div>  -->
+    </section>
+    <section id="services">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="section-header text-center pb-5 mt-5">
+    <h1 class="card-title">Our Services</h1>
+    <p>Flowers are more than just beautiful blooms <br>they play a vital role in the ecosystem and our lives.</p>
+    </div>
+    </div>
+    </div> 
+    <div class="row">
+    <div class="col-md-4 mb-4">
+    <div class="card text-white text-center bg-dark pb-2">
+    <div class="card-body">
+    <i class="bi bi-subtract"></i>
+    <h3 class="card-title">Best Quality</h3>
+    <p>From their early life stages to adulthood, they face several challenges to survive, but they continue to adapt and thrive. Flowers hold significant meanings in different cultures and religions, and we often associate personal memories with them.</p>
+    
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 mb-4">
+    <div class="card text-white text-center bg-dark pb-2">
+    <div class="card-body">
+    <i class="bi bi-playstation"></i>
+    <h3 class="card-title">Integrity</h3>
+    <p>From their early life stages to adulthood, they face several challenges to survive, but they continue to adapt and thrive.Flowers hold significant meanings in different cultures and religions, and we often associate personal memories with them.</p>
+    
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 mb-4">
+    <div class="card text-white text-center bg-dark pb-2">
+    <div class="card-body">
+    <i class="bi bi-slack"></i>
+    <h3 class="card-title">Sustainability</h3>
+    <p>From their early life stages to adulthood, they face several challenges to survive, but they continue to adapt and thrive. Flowers hold significant meanings in different cultures and religions, and we often associate personal memories with them.</p>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="portfolio">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="section-header text-center pb-5 mt-5">
+    <h1 class="card-title">Our Customers</h1>
+    <p>Flowers are more than just beautiful blooms <br>they play a vital role in the ecosystem and our lives.</p>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4 mb-4">
+    <div class="card text-light text-center bg-white pb-2" id="inside">
+    <div class="card-body text-dark">
+    <div class="img mb-4">
+    <img src="https://static.vecteezy.com/system/resources/previews/046/822/325/original/a-professional-and-confident-business-woman-smiling-isolated-on-a-transparent-background-free-png.png"class="img-fluid" alt="">
+    <h3 class="card-title">CATHERIN</h3>
+    <div class=" star mt-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="led"></p>Beautiful flower selections and helpful card messages to start your own personalized message.Prices are very affordable. Easiest on line purchase process. Only took a couple of minutes and it done.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    <div class="col-md-4 mb-4">
+    <div class="card text-light text-center bg-white pb-2" id="inside">
+    <div class="card-body text-dark">
+    <div class="img mb-4">
+    <img src="https://static.vecteezy.com/system/resources/previews/035/589/613/non_2x/ai-generated-business-woman-portrait-isolated-on-a-transparent-background-free-png.png"class="img-fluid" alt="">
+    <h3 class="card-title">JENIFER</h3>
+    <div class=" star mt-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <p class="led"></p>This florist is wonderful to deal with, and their flowers are always fresh, and tend to last a long time A wonderul business to deal with for any occasion.It gave me a wonderful experience for sure.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card text-light text-center bg-white pb-2" id="inside">
+      <div class="card-body text-dark">
+      <div class="img mb-4">
+      <img  src="https://semelriskconsultants.com/wp-content/uploads/2023/05/amazing-cheerful-business-woman-standing-with-arms-crossed-1-e1684235238639.png"class="img-fluid" alt="">
+      <h3 class="card-title">NANCY JOE</h3>
+      <div class=" star mt-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="mt-3">Lovely staff the florist who did the flowers is fantastic keep up the good work.willing to buy an another set of flowers for my coming ocaasion never gettong bored in ordering again and again.</p>
+      
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section id="contact">
+      <div class="container mt-5">
+        <form id="myForm">
+          <div class="group">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="name">
+              <div class="error" id="usernameError"></div>
+            </div>
+          </div>
+      
+          <div class="group">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="text" class="form-control" id="email" placeholder="name@example.com">
+              <div class="error" id="emailError"></div>
+            </div>
+          </div>
+      
+          <div class="group">
+            <div class="mb-3">
+              <label for="address" class="form-label">Address</label>
+              <textarea class="form-control" id="address" rows="3"></textarea>
+              <div class="error" id="addressError"></div>
+            </div>
+          </div>
+      
+          <div class="col-12 text-center">
+            <button class="btn btn-success" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+      
+</form>
+</div>
+    </section>
+    <footer class="bg-dark text-center mt-3">
+    <div class="container">
+    <p class="text-white">All Rights Reserved @Website Name</p>
+    </div>
+    </footer>
+    <script>
+  function read(){
+   let dots=document.getElementById("dots");
+   let more=document.getElementById("more");
+   let button=document.getElementById("button")
+
+   if(dots.style.display==="none"){
+      dots.style.display="inline";
+      button.innerHTML="Read More";
+      more.style.display="none";
+   }
+   else{
+      dots.style.display="none";
+      button.innerHTML="Read Less";
+      more.style.display="inline";
+   }
+  }
+
+
+
+  const form = document.getElementById('myForm');
+  const username = document.getElementById('username');
+  const email = document.getElementById('email');
+  const address = document.getElementById('address');
+
+  
+  const usernameError = document.getElementById('usernameError');
+  const emailError = document.getElementById('emailError');
+  const addressError = document.getElementById('addressError');
+
+
+  function validateForm(event) {
+    let valid = true;
+
+    usernameError.textContent = '';
+    emailError.textContent = '';
+    addressError.textContent = '';
+
+    if (username.value.trim() === '') {
+      usernameError.textContent = 'Username is required.';
+      valid = false;
+    } else if (username.value.length < 3) {
+      usernameError.textContent = 'Username must be at least 3 characters long.';
+      valid = false;
+    }
+    else if(username.value.length > 3){
+      usernameError.style.borderColor="green"
+      valid=true;
+    }
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email.value.trim())) {
+      emailError.textContent = 'Please enter a valid email address.';
+      valid = false;
+    }
+    if (address.value.trim() === '') {
+      addressError.textContent = 'Address cannot be empty.';
+      valid = false;
+    }
+    if (!valid) {
+      event.preventDefault();
+    }
+  }
+  form.addEventListener('submit', validateForm);
+
+
+  
+
+
+  function toggleHeart() {
+    const heartIcon = document.getElementById('heart-icon');
+    if (heartIcon.classList.contains('fa-regular')) {
+      heartIcon.classList.remove('fa-regular');
+      heartIcon.classList.add('fa-solid');
+    } else {
+      heartIcon.classList.remove('fa-solid');
+      heartIcon.classList.add('fa-regular');
+    }
+  }
+</script>
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-kenU1KFdIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJ1+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
