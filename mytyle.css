@@ -59,11 +59,7 @@ letter-spacing:2px;
 .navbar-light .navbar-nav .navbar-link{
 color:#000;
 }
-.card img{
-height:200px;
-width:235px;
-mix-blend-mode:multiply;
-}
+
 .navbar-brand{
 font-family: "Anton", sans-serif;
 }
@@ -148,4 +144,8 @@ display:none;
 #double{
     display:flex;
     justify-content: space-between;
+}
+#women{
+    height:300px;
+    width:300px;
 }
